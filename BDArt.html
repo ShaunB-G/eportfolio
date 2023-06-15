@@ -11,6 +11,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+        .pdf-container {
+            width: 50%;
+            height: 100vh;
+            float: left;
+            page-break-inside: avoid;
+        }
+
+        .pdf-title {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
 	</head>
 	<body class="is-preload">
 
@@ -109,18 +123,22 @@
 										<h2>Normalisation Task</h2>
 									</header>
 									<p>The Normalisation Task required a table with data that is in a un-normalised form to be normalised to the 3rd Normal Form (3NF), showing each step of the process.</p>
-										<h3>Original Data</h3>
-									
+									<div class="pdf-container">
+									<h3 class="pdf-title">Original Data</h3>
 									<embed src="images/NormalisationTaskData.png" width="500px" height="700px" style="text-align: center />	
-										<h3>"1st Nominal Form (1NF)"</h3>
-									
+									</div>
+									<div class="pdf-container">	
+									<h3 class="pdf-title">"1st Nominal Form (1NF)"</h3>
 									<embed src="assets/1NF.pdf" width="500px" height="700px" style="text-align: center />
-									<h3>"2nd Nominal Form (2NF)"</h3>
-									
+									</div>
+									<div class="pdf-container">
+									<h3 class="pdf-title">"2nd Nominal Form (2NF)"</h3>
 									<embed src="assets/2NF.pdf" width="500px" height="700px" style="text-align: center />
-									<h3>"3rd Nominal Form (3NF)"</h3>
-									
+									</div>
+									<div class="pdf-container">
+									<h3 class="pdf-title">"3rd Nominal Form (3NF)"</h3>
 									<embed src="assets/3NF.pdf" width="500px" height="700px" style="text-align: center />
+										</div>
 					</div>
 					<!-- Six -->
 							<section id="six" class="alt">
