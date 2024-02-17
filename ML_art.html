@@ -82,8 +82,7 @@
 <a href="#eight" class="button">Unit 07: ANN</a>
   <a href="#nine" class="button">Collab Discussion 2</a>
   <a href="#ten" class="button">Gradient Cost Function</a>
-<a href="#twelve" class="button">CNN Model</a>
-  <a href="#fourteen" class="button">CNN Tutorial</a>
+<a href="#twelve" class="button">CNN Activities</a>
   <a href="#fifteen" class="button">Model Performance</a>
 <a href="#sixteen" class="button">Future of Machine Learning</a>
 </div>		
@@ -413,26 +412,49 @@
 								
 								<div class="inner">
 									<header class="major">
-										<h2>Unit 09 e-Portfolio Activity - CNN Model Activity</h2>
+										<h2>Unit 09 & 10- CNN Model & Tutorial Activities</h2>
 									</header>
-														
+										<pre>
+											<code> model = Sequential()
+
+## ************* FIRST SET OF LAYERS *************************
+
+# CONVOLUTIONAL LAYER
+model.add(Conv2D(filters=32, kernel_size=(4,4),input_shape=(32, 32, 3), activation='relu',))
+# POOLING LAYER
+model.add(MaxPool2D(pool_size=(2, 2)))
+
+## *************** SECOND SET OF LAYERS ***********************
+#Since the shape of the data is 32 x 32 x 3 =3072 ... 
+#We need to deal with this more complex structure by adding yet another convolutional layer
+
+# *************CONVOLUTIONAL LAYER
+model.add(Conv2D(filters=32, kernel_size=(4,4),input_shape=(32, 32, 3), activation='relu',))
+# POOLING LAYER
+model.add(MaxPool2D(pool_size=(2, 2)))
+
+# FLATTEN IMAGES FROM 32 x 32 x 3 =3072 BEFORE FINAL LAYER
+model.add(Flatten())
+
+# 256 NEURONS IN DENSE HIDDEN LAYER (YOU CAN CHANGE THIS NUMBER OF NEURONS)
+model.add(Dense(256, activation='relu'))
+
+# LAST LAYER IS THE CLASSIFIER, THUS 10 POSSIBLE CLASSES
+model.add(Dense(10, activation='softmax'))
+
+
+model.compile(loss='categorical_crossentropy',
+              optimizer='adam',
+              metrics=['accuracy'])
+											</code>
+										</pre>				
 					</div>
 									
 							</section>
 
 
 <!-- Fourteen -->
-							<section id="fourteen" class="alt">
-								
-								<div class="inner">
-									<header class="major">
-										<h2>Unit 10 Seminar Preparation - CNN Tutorial</h2>
-									</header>
-									
-										
-					</div>
-									
-							</section>
+							
 
 						<!-- Fifteen -->
 							<section id="fifteen" class="alt">
