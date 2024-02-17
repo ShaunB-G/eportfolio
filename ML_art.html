@@ -417,7 +417,10 @@
 									<h3>Biased and wrong? Wall (2019)</h3>
 									<p>
 Working in an innovative environment often fosters enthusiasm about the potential benefits of AI and facial recognition (FR). However, after delving into Wall's (2019) insights, it becomes clear that these advancements come with significant dangers and shortcomings. The primary concern lies in the fact that FR and AI learn from data influenced by humans, leaving them susceptible to the biases deeply ingrained in society. As Hutson (2021) aptly highlights, AI algorithms exhibit inherent biases, leading to erroneous associations and perpetuating gender stereotypes. The integration of facial recognition into various sectors, underscores the urgency for a cautious and regulated approach to ensure fairness and accuracy while mitigating the potential adverse societal impacts of these technologies. </p>
-									<h3>The model</h3>
+									<li>Hutson, M. (2021) Robo-writers: The rise and risks of language-generating AI, Nature News. Available at: https://www.nature.com/articles/d41586-021-00530-0 (Accessed: 10 January 2024).</li>
+									<li>Wall, M. (2019) Biased and wrong? Facial Recognition Tech in the dock, BBC News. Available at: https://www.bbc.co.uk/news/business-48842750 (Accessed: 14 October 2023).</li>
+									
+								<h3>The model</h3>
 									<p> The model provided is a Convolutional Neural Network (CNN) for image classification with two sets of convolutional layers (32 filters, (4,4) kernel, ReLU activation, followed by max-pooling), a flattening layer, a dense hidden layer (256 neurons, ReLU activation), and an output layer with softmax activation for 10 classes. It uses categorical crossentropy loss, the Adam optimizer, and accuracy as the evaluation metric.</p>
 										<pre>
 											<code> model = Sequential()
@@ -452,7 +455,15 @@ model.compile(loss='categorical_crossentropy',
               optimizer='adam',
               metrics=['accuracy'])
 											</code>
-										</pre>				
+										</pre>		
+									<h3>Model Performance</h3>
+									<li>Loss: The training loss consistently decreases over epochs, indicating that the model is effectively learning from the training data.</li>
+
+<li>Accuracy: The training accuracy steadily improves, reaching a commendable 79.29% by the last epoch, demonstrating the model's ability to correctly classify the training data.</li>
+
+<li>Validation Loss: The validation loss initially decreases, suggesting effective generalization. However, there is a slight increase in later epochs, indicating the potential for overfitting or a need for fine-tuning.</li>
+
+<li>Validation Accuracy: The validation accuracy shows an upward trend, reaching 66.96% by the last epoch. While it lags behind the training accuracy, the model seems to generalize reasonably well to unseen data.</li>
 					</div>
 									
 							</section>
