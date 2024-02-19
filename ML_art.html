@@ -513,7 +513,7 @@ model.compile(loss='categorical_crossentropy',
       <td>0.8189901556049539</td>
     </tr>
   </table>
-									<h3>Altering Solver</h3>
+									<h4>Altering Solver</h4>
 									<p>Comparing 'liblinear' and 'lbfgs' solvers, 'liblinear' resulted in a higher AUC and R2. This indicates that, for this specific problem and dataset, the 'liblinear' solver performs better.</p>
 <table>
     <tr>
@@ -532,7 +532,7 @@ model.compile(loss='categorical_crossentropy',
       <td>0.7465862178469356</td>
     </tr>
   </table>
-									<h3>Altering Random State</h3>
+									<h4>Altering Random State</h4>
 									<p>Changing the random state did not have a significant impact on AUC and R2. All three random states (0, 42, and 99) resulted in the same AUC and R2 values. This suggests that the model's performance is relatively stable across different random splits of the data.</p>
 									<table>
     <tr>
@@ -560,7 +560,7 @@ model.compile(loss='categorical_crossentropy',
 <li>Increasing the regularisation strength (decreasing C) generally leads to a decrease in model performance.</li>
 <li>The choice of solver can impact performance, with 'liblinear' performing better in this case.</li>
 <li>Random state changes did not affect the model's performance significantly, indicating stability in the results across different random splits.</li>
-								
+				<p></p>				
 				<h3>Iris Dataset</h3>
 									  <table>
     <tr>
