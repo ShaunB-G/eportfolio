@@ -90,6 +90,135 @@
 <li>Explain what a literature review is, how to perform it, and how to present it.</li>
 
 
+<h2>Title: Machine Learning Approaches for Detecting Medical Misinformation on Twitter: A Literature Review</h2>
+<h3>Research Question: How effective are machine learning techniques in detecting medical misinformation on Twitter, and what are the main challenges and opportunities in this field?</h3>
+
+
+<h3>1. What is the focus and aim of your review? Who is your audience? </h3>
+
+<p>The primary focus of this literature review is to evaluate the effectiveness and advancements in using machine learning techniques to detect medical misinformation on the Twitter social media platform. The aim is to provide insights into the research from the past five years, identify gaps within the research, and suggest potential directions for future studies. The intended audience for this review includes researchers in the fields of machine learning, healthcare, and social media studies, as well as policymakers and healthcare professionals interested in combating medical misinformation online.</p>
+
+<h3>2. Why is there a need for your review? Why is it significant?</h3>
+
+<p>The proliferation of medical misinformation on social media platforms has become a significant public health concern that leads to severe consequences, such as the dissemination of false information, the manipulation of public opinion, and the erosion of faith in institutions (Dar & Hashmy, 2023). 
+Misinformation can lead to harmful behaviours, mistrust in healthcare systems, and ultimately jeopardise public health particularly in marginalised groups (Jaiswal & Halkitis, 2019). 
+Given the vast amount of information shared daily on social media platforms, there is a pressing need for automated and efficient methods to detect and combat this misinformation. 
+This review aims to consolidate existing research on using machine learning to address this issue and provide a comprehensive understanding of its current state and potential challenges.</p>
+
+<h3>3. What is the context of the topic or issue? What perspective do you take? What framework do you use to synthesise the literature?</h3>
+
+<p>This literature review takes a neutral and analytical perspective. </p>
+<p>This literature review adopts a systematic review framework, following a rigorous and structured methodology to identify, select, and integrate insights from machine learning, healthcare and social media studies. The framework used to synthesise the literature involves categorising studies based on the machine learning techniques employed, the datasets used, the evaluation metrics, and the effectiveness of the detection methods.</p>
+
+<h3>4. How did you locate and select sources for inclusion in the review?</h3>
+
+<p>Sources for inclusion in this review were identified through systematic searches of academic databases most prominently University of Essex Online library and Google Scholar. </p>
+
+Keywords used for the search included four AND statements: 
+<li>"Social media" OR “Twitter”  </li>
+<li>"Machine learning" OR "natural language processing" </li>
+<li>"Medical" OR "healthcare." </li>
+<li>“Misinformation” OR “disinformation” </li>
+
+<p>Additionally, references from selected articles were reviewed to identify additional relevant studies. The selection criteria prioritised peer-reviewed articles, conference papers, and high-quality reviews published within the last five years (2019-2024) to ensure relevance and rigour.<p>
+
+<li>UoE library Query: reduced results to 17 then selected relevant 5</li>
+https://essex.primo.exlibrisgroup.com/discovery/search?query=any,contains,%22misinformation%22%20OR%20%22disinformation%22,AND&query=any,contains,%22Twitter%22,AND&query=any,contains,%22COVID%22%20AND%20%22machine%20learning%22,AND&pfilter=lang,exact,eng,AND&pfilter=dr_s,exact,20190101,AND&pfilter=dr_e,exact,99991231,AND&tab=UoESlotNew&search_scope=UoEOnlineNEW&vid=44UOES_INST:ONLINE&mfacet=tlevel,include,online_resources,1&lang=en&mode=advanced&offset=0 
+
+<li>Google Scholar Query:</li>
+
+<p>https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=%22Social+media%22+OR+%E2%80%9CTwitter%E2%80%9D+AND++%22Machine+learning%22+OR+%22natural+language+processing%22+AND+%22Medical%22+OR+%22healthcare.%22+AND++%E2%80%9CMisinformation%E2%80%9D+OR+%E2%80%9Cdisinformation%E2%80%9D+&btnG= </p>
+
+<h3>5. How is your review structured?</h3>
+
+<p>The review is structured into several sections: </p>
+<li>Introduction to the problem of medical misinformation on social media (200 words). </li>
+
+<li>Machine learning techniques employed in detecting misinformation, the datasets used for training and evaluation, the evaluation metrics employed, and the effectiveness of the detection methods. (600 words)</li>
+
+<li>Challenges associated with misinformation (400 words) </li>
+
+<li>A summary of the main findings, strengths and limitations of the literature, discrepancies in the findings (600 words) </li>
+
+<li>Conclusion (200 words).</li>
+
+<h3>6. What are the main findings in the literature on this topic?</h3>
+
+<p>The literature reveals a growing interest in leveraging machine learning techniques, particularly natural language processing (NLP), to detect medical misinformation on social media platforms. Various machine learning algorithms, including supervised, unsupervised, and deep learning approaches, have been employed with varying degrees of success. Studies have highlighted the importance of high-quality labelled datasets, domain-specific features, and robust evaluation metrics in enhancing the accuracy and reliability of detection methods.</p>
+<p>Feature extraction: removed words with no impact on the classification result. The comparison between the results of the ML algorithms before and after the feature extraction prove that the performance of the ML algorithms increase after feature extraction (Khan et al 2022). </p>
+
+TABLE******************************
+Study 
+Best performing Classifier
+accuracy
+Remarks 
+
+Khan et al (2022)
+Random forest
+After FE: 88.50%
+
+before : 83.33%
+Use of feature extraction improved model performance (Named Entity Recognition (NER) )
+
+Compared: RF, AdaBoost classifier, Decision tree, K-Nearest neighbour.
+Safarnejad, L. et al. (2021)
+Random forest outperformed SVM in all scenarios
+82%
+
+
+Dar, R.A. and Hashmy, R. (2023)
+Multimodal (including CCN & RF)
+98.62%
+
+
+Bojjireddy, S., Chun, S.A. and Geller, J. (2021)
+Support Vector Machine (SVM) model
+95.63%
+The models evaluated in the study are as follows:
+
+Support Vector Machine (SVM)
+Multilayer Perceptron (MLP)
+Random Forest
+Decision Tree
+Gradient Boosting
+Multinomial Naïve Bayes
+
+
+
+<h3>7. What are the main strengths and limitations of this literature?</h3>
+
+<p>Strengths of the literature include the development of innovative machine learning models tailored to the unique characteristics of medical misinformation, the exploration of diverse datasets, and the use of rigorous evaluation metrics to assess the performance of detection methods. However, limitations include the lack of standardised datasets, the dynamic nature of social media content, the challenge of identifying subtle and context-dependent misinformation, and the potential for algorithmic biases.</p>
+
+<p>The literature uses a variety of ML algorithms (including random forest, decision trees and K neighbours) to find which were the most effective.</p>
+
+Limitations 
+ML algorithms used on text features only and there is no ML method of identifying misinformation in audio clips, images, and video clips which are the most attractive way to spread fake information. (Khan et al 2022)
+
+Existing studies are not directly comparable to each other due to the lack of large-scale publicly available datasets (Islam et al., 2020).
+
+Multiple mentions of models being overfitted 
+
+<h3>8. Are there any discrepancies in this literature?</h3>
+
+<p>Discrepancies in the literature primarily revolve around the choice of machine learning algorithms, the diversity and quality of datasets used, and the evaluation metrics employed. Some studies report high accuracy rates in detecting medical misinformation, while others highlight the challenges and limitations of existing approaches, indicating the need for further refinement and validation of detection methods.
+
+Bojjireddy, S., Chun, S.A. and Geller, J. (2021): Only study to show SVM outperforming random forest model however Bojjireddy states that the SVM is limited by not being suitable for large datasets </p>
+
+<h3>9. What conclusions do you draw from the review? What do you argue needs to be done as an outcome of the review?</h3>
+
+<p>Currently random forest classifiers seem to perform the best while using a single classifier. However, there is evidence that multimodal approaches could combine the strengths of different classifiers to further improve the performance while detecting misinformation.</p>
+
+</p>Future consideration: Deep learning algorithms and natural language processing for the semantical understanding of linguistic features can be further analysed on a dataset containing images, audio, and video (Khan et al., 2022)</p>
+
+<h3>Selected articles:</h3>
+<li>Bojjireddy, S., Chun, S.A. and Geller, J. (2021) ‘Machine Learning Approach to detect fake news, misinformation in covid-19 pandemic’, DG.O2021: The 22nd Annual International Conference on Digital Government Research [Preprint]. doi:10.1145/3463677.3463762. </li>
+<li>Dar, R.A. and Hashmy, R. (2023) ‘A multimodal ensemble machine learning approach to COVID-19 misinformation detection in Twitter’, ITM Web of Conferences, 54, p. 01015. doi:10.1051/itmconf/20235401015. </li>
+<li>Islam, M.R. et al. (2020) ‘Deep learning for misinformation detection on online social networks: A survey and new perspectives’, Social Network Analysis and Mining, 10(1). doi:10.1007/s13278-020-00696-x. </li>
+<li>Jaiswal, J. and Halkitis, P.N. (2019) ‘Towards a more inclusive and dynamic understanding of medical mistrust informed by science’, Behavioral Medicine, 45(2), pp. 79–85. doi:10.1080/08964289.2019.1619511. </li>
+<li>Khan, S. et al. (2022) ‘Detecting covid-19-related fake news using feature extraction’, Frontiers in Public Health, 9. doi:10.3389/fpubh.2021.788074. </li>
+<li>Liu, Y., Boukouvalas, Z. and Japkowicz, N. (2021) ‘A semi-supervised framework for Misinformation Detection’, Discovery Science, pp. 57–66. doi:10.1007/978-3-030-88942-5_5. </li>
+<li>Safarnejad, L. et al. (2021) ‘A multiple feature category data mining and machine learning approach to characterise and detect health misinformation on social media’, IEEE Internet Computing, 25(5), pp. 43–51. doi:10.1109/mic.2021.3063257. </li>
+<li>Wang, Y. et al. (2019) ‘Systematic literature review on the spread of health-related misinformation on social media’, Social Science &amp; Medicine, 240, p. 112552. doi:10.1016/j.socscimed.2019.112552. </li>
 									
 								</div>
 									
