@@ -89,7 +89,7 @@
 <li>Look at all the parts that make up a research proposal and how to present your thoughts.</li>
 <li>Explain what a literature review is, how to perform it, and how to present it.</li>
 
-
+<p>      </p>
 <h2>Title: Machine Learning Approaches for Detecting Medical Misinformation on Twitter: A Literature Review</h2>
 <h3>Research Question: How effective are machine learning techniques in detecting medical misinformation on Twitter, and what are the main challenges and opportunities in this field?</h3>
 
@@ -141,47 +141,50 @@ https://essex.primo.exlibrisgroup.com/discovery/search?query=any,contains,%22mis
 <li>A summary of the main findings, strengths and limitations of the literature, discrepancies in the findings (600 words) </li>
 
 <li>Conclusion (200 words).</li>
-
+<p>    </p>
 <h3>6. What are the main findings in the literature on this topic?</h3>
 
 <p>The literature reveals a growing interest in leveraging machine learning techniques, particularly natural language processing (NLP), to detect medical misinformation on social media platforms. Various machine learning algorithms, including supervised, unsupervised, and deep learning approaches, have been employed with varying degrees of success. Studies have highlighted the importance of high-quality labelled datasets, domain-specific features, and robust evaluation metrics in enhancing the accuracy and reliability of detection methods.</p>
 <p>Feature extraction: removed words with no impact on the classification result. The comparison between the results of the ML algorithms before and after the feature extraction prove that the performance of the ML algorithms increase after feature extraction (Khan et al 2022). </p>
 
-TABLE******************************
-Study 
-Best performing Classifier
-accuracy
-Remarks 
+<table>
+    <tr>
+      <th>Study </th>
+<th>Best performing Classifier</th>
+<th>Accuracy</th>
+<th>Remarks </th>
+ </tr>
+<tr>
+	<td>Khan et al (2022)</td>
+<td>Random forest</td>
+<td>After FE: 88.50%
+	Before FE: 83.33%</td>
+<td>Use of feature extraction improved model performance (Named Entity Recognition (NER))</td>
 
-Khan et al (2022)
-Random forest
-After FE: 88.50%
-
-before : 83.33%
-Use of feature extraction improved model performance (Named Entity Recognition (NER) )
-
-Compared: RF, AdaBoost classifier, Decision tree, K-Nearest neighbour.
-Safarnejad, L. et al. (2021)
-Random forest outperformed SVM in all scenarios
-82%
-
-
-Dar, R.A. and Hashmy, R. (2023)
-Multimodal (including CCN & RF)
-98.62%
-
-
-Bojjireddy, S., Chun, S.A. and Geller, J. (2021)
-Support Vector Machine (SVM) model
-95.63%
-The models evaluated in the study are as follows:
+<td>Compared: RF, AdaBoost classifier, Decision tree, K-Nearest neighbour.</td>
+</tr>
+	<tr>
+	<td>Safarnejad, L. et al. (2021)</td>
+<td>Random forest outperformed SVM in all scenarios</td>
+<td>82%</td>
+<tr>
+</tr>
+<td>Dar, R.A. and Hashmy, R. (2023)</td>
+<td>Multimodal (including CCN & RF)</td>
+<td>98.62%</td>
+<tr>
+</tr>
+<td>Bojjireddy, S., Chun, S.A. and Geller, J. (2021)</td>
+<td>Support Vector Machine (SVM) model</td>
+<td>95.63%</td>
+<td>The models evaluated in the study are as follows:
 
 Support Vector Machine (SVM)
 Multilayer Perceptron (MLP)
 Random Forest
 Decision Tree
 Gradient Boosting
-Multinomial Naïve Bayes
+Multinomial Naïve Bayes</td>
 
 
 
@@ -191,12 +194,12 @@ Multinomial Naïve Bayes
 
 <p>The literature uses a variety of ML algorithms (including random forest, decision trees and K neighbours) to find which were the most effective.</p>
 
-Limitations 
+Limitations: 
 ML algorithms used on text features only and there is no ML method of identifying misinformation in audio clips, images, and video clips which are the most attractive way to spread fake information. (Khan et al 2022)
 
 Existing studies are not directly comparable to each other due to the lack of large-scale publicly available datasets (Islam et al., 2020).
 
-Multiple mentions of models being overfitted 
+There are multiple mentions of models being overfitted. </p>
 
 <h3>8. Are there any discrepancies in this literature?</h3>
 
