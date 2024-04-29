@@ -155,93 +155,38 @@
 <p>The paired two-sample t-test was conducted to compare the means of two related groups, Con1 and Con2. The analysis revealed that Con1 has a mean of 172.6, while Con2 has a mean of 159.4. The variances of Con1 and Con2 were calculated to be 750.27 and 789.38, respectively, with both groups comprising 10 observations. A strong positive linear relationship between Con1 and Con2 was indicated by a Pearson correlation coefficient of 0.86. The null hypothesis, suggesting no difference between the means of the two groups, was rejected based on a calculated t-statistic of 2.87 and a one-tailed p-value of 0.01, which is lower than the typical significance level of 0.05. Additionally, the t-statistic exceeded the critical t-value of 1.83 for a one-tailed test. These results provide compelling evidence that there is a statistically significant difference between the means of Con1 and Con2. Therefore, the findings suggest that there is a notable distinction between the two groups, indicating that further investigation into the factors influencing these differences may be warranted.</p>
 
                   
-<h2>The INDEPENDENT Samples T Test</h2>
-
-  <table>
-  <caption>F-Test Two-Sample for Variances</caption>
+<h2>Exercise 7.2</h2>
+<p>Exercise: Assuming the data to be suitably distributed, complete an appropriate test of whether the
+population mean income for males exceeds that of females and interpret your findings. What
+assumptions underpin the validity of your analysis, and how could you validate them?</p>
+ <table border="1">
+  <caption>T Test: Two-Sample Assuming Equal Variances</caption>
   <thead>
     <tr>
       <th></th>
-      <th>Variable 1</th>
-      <th>Variable 2</th>
+      <th>Male</th>
+      <th>Female</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Mean</td>
-      <td>5.3412</td>
-      <td>3.70996</td>
+      <td>52.91333333</td>
+      <td>44.23333333</td>
     </tr>
     <tr>
       <td>Variance</td>
-      <td>6.429280612</td>
-      <td>7.66759359</td>
+      <td>233.1289718</td>
+      <td>190.1758192</td>
     </tr>
     <tr>
       <td>Observations</td>
-      <td>50</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>df</td>
-      <td>49</td>
-      <td>49</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td colspan="2">0.838500442</td>
-    </tr>
-    <tr>
-      <td>P(F&lt;=f) one-tail</td>
-      <td colspan="2">0.269951479</td>
-    </tr>
-    <tr>
-      <td>F Critical one-tail</td>
-      <td colspan="2">0.622165467</td>
-    </tr>
-    <tr>
-      <td>p2</td>
-      <td colspan="2">0.539902958</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4>Interpretation</h4>
-<p>The output presents the results of an F-test for two-sample variances and an independent samples t-test comparing Variable 1 and Variable 2. Variable 1 has a mean of 5.3412 and a variance of 6.429280612, while Variable 2 has a mean of 3.70996 and a variance of 7.66759359. Both groups consist of 50 observations, with degrees of freedom for each set at 49. The F-statistic, comparing the variances of the two groups, is 0.838500442, yielding a one-tailed p-value of 0.269951479. Since this p-value exceeds the typical significance level of 0.05, there is insufficient evidence to reject the null hypothesis of equal variances. Consequently, the t-test for independent samples, which is more reliable when variances are not significantly different, can be utilised to compare the means of Variable 1 and Variable 2. Therefore, while the means of the two variables may differ, their variances are not significantly distinct from each other, suggesting that any observed differences in means may not be attributed to differences in variances between the two groups.</p>
-
-                  
-
-                  
-<h2>t-Test: Two-Sample Assuming Equal Variances</h2>
-
-                  <table>
-  <caption>t-Test: Two-Sample Assuming Equal Variances</caption>
-  <thead>
-    <tr>
-      <th></th>
-      <th>Variable 1</th>
-      <th>Variable 2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Mean</td>
-      <td>5.3412</td>
-      <td>3.70996</td>
-    </tr>
-    <tr>
-      <td>Variance</td>
-      <td>6.429280612</td>
-      <td>7.66759359</td>
-    </tr>
-    <tr>
-      <td>Observations</td>
-      <td>50</td>
-      <td>50</td>
+      <td>60</td>
+      <td>60</td>
     </tr>
     <tr>
       <td>Pooled Variance</td>
-      <td colspan="2">7.048437101</td>
+      <td colspan="2">211.6523955</td>
     </tr>
     <tr>
       <td>Hypothesized Mean Difference</td>
@@ -249,31 +194,31 @@
     </tr>
     <tr>
       <td>df</td>
-      <td colspan="2">98</td>
+      <td colspan="2">118</td>
     </tr>
     <tr>
       <td>t Stat</td>
-      <td colspan="2">3.072143179</td>
+      <td colspan="2">3.267900001</td>
     </tr>
     <tr>
       <td>P(T<=t) one-tail</td>
-      <td colspan="2">0.001375772</td>
+      <td colspan="2">0.000709735</td>
     </tr>
     <tr>
       <td>t Critical one-tail</td>
-      <td colspan="2">1.660551218</td>
+      <td colspan="2">1.657869462</td>
     </tr>
     <tr>
       <td>P(T<=t) two-tail</td>
-      <td colspan="2">0.002751544</td>
+      <td colspan="2">0.00141947</td>
     </tr>
     <tr>
       <td>t Critical two-tail</td>
-      <td colspan="2">1.984467404</td>
+      <td colspan="2">1.980272182</td>
     </tr>
     <tr>
       <td>Difference in means</td>
-      <td colspan="2">1.63124</td>
+      <td colspan="2">8.68</td>
     </tr>
   </tbody>
 </table>
@@ -281,8 +226,10 @@
 
 <h4>Interpretation</h4>
 <p>
-The output provides the results of a two-sample t-test assuming equal variances, comparing the means of Variable 1 and Variable 2. Variable 1 has a mean of 5.3412 with a variance of 6.429280612, while Variable 2 has a mean of 3.70996 with a variance of 7.66759359. Both groups consist of 50 observations, resulting in 98 degrees of freedom for the t-test. The calculated t-statistic is 3.072143179, yielding a one-tailed p-value of 0.001375772. This p-value is lower than the typical significance level of 0.05, indicating strong evidence against the null hypothesis of no difference between the means of the two variables. Consequently, the null hypothesis is rejected, suggesting a statistically significant difference between the means of Variable 1 and Variable 2. The difference in means is calculated to be 1.63124, further indicating the direction and magnitude of this difference. These findings suggest that Variable 1 and Variable 2 exhibit distinct means, and further investigation into the factors contributing to this difference may be warranted.</p>				
-								</div>
+The results of the two-sample t-test assuming equal variances provide insights into the comparison of mean scores between male and female groups. The analysis reveals that the mean score for the male group is 52.91, whereas for the female group, it is 44.23. Variances in scores are also noted, with the male group displaying a variance of 233.13 and the female group showing a variance of 190.18. Both groups comprise 60 observations, resulting in 118 degrees of freedom for the t-test. The calculated t-statistic of 3.27 suggests a substantial difference between the means of the two groups. The one-tailed p-value of 0.0007 indicates strong evidence against the null hypothesis of no difference in means, leading to the rejection of this hypothesis. Moreover, the difference in means of 8.68 further underscores the disparity between the male and female groups. In summary, these findings suggest that the mean income for the male group is significantly higher than that of the female group, implying potential gender-based differences in income.</p>
+
+                  
+							</div>
 									
 </section>
 						
