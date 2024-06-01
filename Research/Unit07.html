@@ -155,6 +155,89 @@
 <h4>Interpretation</h4>
 <p>The paired two-sample t-test was conducted to compare the means of two related groups, Con1 and Con2. The analysis revealed that Con1 has a mean of 172.6, while Con2 has a mean of 159.4. The variances of Con1 and Con2 were calculated to be 750.27 and 789.38, respectively, with both groups comprising 10 observations. A strong positive linear relationship between Con1 and Con2 was indicated by a Pearson correlation coefficient of 0.86. The null hypothesis, suggesting no difference between the means of the two groups, was rejected based on a calculated t-statistic of 2.87 and a one-tailed p-value of 0.01, which is lower than the typical significance level of 0.05. Additionally, the t-statistic exceeded the critical t-value of 1.83 for a one-tailed test. These results provide compelling evidence that there is a statistically significant difference between the means of Con1 and Con2. Therefore, the findings suggest that there is a notable distinction between the two groups, indicating that further investigation into the factors influencing these differences may be warranted.</p>
 
+  <div class="container">
+        <h1>One-Tailed T-Test Analysis</h1>
+        <h2>Given Data</h2>
+        <table>
+            <tr>
+                <th>Batch</th>
+                <th>Agent 1</th>
+                <th>Agent 2</th>
+            </tr>
+            <tr><td>1</td><td>7.7</td><td>8.5</td></tr>
+            <tr><td>2</td><td>9.2</td><td>9.6</td></tr>
+            <tr><td>3</td><td>6.8</td><td>6.4</td></tr>
+            <tr><td>4</td><td>9.5</td><td>9.8</td></tr>
+            <tr><td>5</td><td>8.7</td><td>9.3</td></tr>
+            <tr><td>6</td><td>6.9</td><td>7.6</td></tr>
+            <tr><td>7</td><td>7.5</td><td>8.2</td></tr>
+            <tr><td>8</td><td>7.1</td><td>7.7</td></tr>
+            <tr><td>9</td><td>8.7</td><td>9.4</td></tr>
+            <tr><td>10</td><td>9.4</td><td>8.9</td></tr>
+            <tr><td>11</td><td>9.4</td><td>9.7</td></tr>
+            <tr><td>12</td><td>8.1</td><td>9.1</td></tr>
+        </table>
+
+        <h2>Exercise 7.1</h2>
+        <table>
+            <tr>
+                <th>Statistic</th>
+                <th>Agent 1</th>
+                <th>Agent 2</th>
+            </tr>
+            <tr>
+                <td>Mean</td>
+                <td>8.25</td>
+                <td>8.683333333</td>
+            </tr>
+            <tr>
+                <td>Variance</td>
+                <td>1.059090909</td>
+                <td>1.077878788</td>
+            </tr>
+            <tr>
+                <td>Observations</td>
+                <td>12</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Pearson Correlation</td>
+                <td colspan="2">0.901055812</td>
+            </tr>
+            <tr>
+                <td>Hypothesized Mean Difference</td>
+                <td colspan="2">0</td>
+            </tr>
+            <tr>
+                <td>df</td>
+                <td colspan="2">11</td>
+            </tr>
+            <tr>
+                <td>t Stat</td>
+                <td colspan="2">-3.263938591</td>
+            </tr>
+            <tr>
+                <td>P(T<=t) one-tail</td>
+                <td colspan="2">0.003772997</td>
+            </tr>
+            <tr>
+                <td>t Critical one-tail</td>
+                <td colspan="2">1.795884781</td>
+            </tr>
+            <tr>
+                <td>P(T<=t) two-tail</td>
+                <td colspan="2">0.007545995</td>
+            </tr>
+            <tr>
+                <td>t Critical two-tail</td>
+                <td colspan="2">2.200985143</td>
+            </tr>
+        </table>
+
+        <h2>Conclusion</h2>
+        <div class="conclusion">
+            Given the one-tailed test results, we conclude that Filter Agent 1 is more effective than Filter Agent 2, as the mean impurity level for Agent 1 is significantly lower than that for Agent 2. This conclusion is based on the t Stat of -3.263938591 being less than the critical value of -1.795884781 and the one-tail p-value of 0.003772997 being less than the significance level of 0.05. Therefore, we reject the null hypothesis and accept the alternative hypothesis that Filter Agent 1 has a lower mean impurity level compared to Filter Agent 2.
+        </div>									
                   
 <h2>Exercise 7.2</h2>
 <p>Exercise: Assuming the data to be suitably distributed, complete an appropriate test of whether the
